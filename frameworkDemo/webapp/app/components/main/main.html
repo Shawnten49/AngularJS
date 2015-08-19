@@ -1,0 +1,404 @@
+<div class="container-fluid main-content">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-success">
+            <button class="close" data-dismiss="alert" type="button">×</button>了解更好，更快，更漂亮的后台主题H+ <a href="http://www.zi-han.net/theme/hplus" target="_blank">去看看</a>
+        </div>
+    </div>
+</div>
+<!-- Statistics -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="widget-container stats-container">
+            <div class="col-md-3">
+                <div class="number">
+                    <div class="icon globe"></div>
+                    86<small>%</small>
+                </div>
+                <div class="text">
+                    整体增长
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="number">
+                    <div class="icon visitors"></div>
+                    613
+                </div>
+                <div class="text">
+                    访问者
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="number">
+                    <div class="icon money"></div>
+                    <small>¥</small>924
+                </div>
+                <div class="text">
+                    销售额
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="number">
+                    <div class="icon chat-bubbles"></div>
+                    325
+                </div>
+                <div class="text">
+                    新关注
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Statistics -->
+<div class="row">
+    <!-- Weather -->
+    <div class="col-md-8">
+        <div class="widget-container weather">
+            <div class="widget-content padded">
+                <div class="row text-center">
+                    <div class="col-sm-6 col-md-6 col-lg-4 today">
+                        <p>
+                            今日
+                        </p>
+                        <canvas class="skycons-element" data-skycons="RAIN" height="100" id="rain" width="100"></canvas>
+                        <div class="number">
+                            72<small>°</small>
+                        </div>
+                        <p class="location">
+                            北京
+                        </p>
+                    </div>
+                    <div class="col-sm-2 hidden-xs">
+                        <p>
+                            星期一
+                        </p>
+                        <canvas class="skycons-element" data-skycons="CLEAR_DAY" height="60" id="clear-day" width="60"></canvas>
+                        <div class="number">
+                            86<small>°</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 hidden-xs">
+                        <p>
+                            星期二
+                        </p>
+                        <canvas class="skycons-element" data-skycons="RAIN" height="60" id="cloudy" width="60"></canvas>
+                        <div class="number">
+                            75<small>°</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 hidden-xs">
+                        <p>
+                            星期三
+                        </p>
+                        <canvas class="skycons-element" data-skycons="PARTLY_CLOUDY_DAY" height="60" id="partly-cloudy-day" width="60"></canvas>
+                        <div class="number">
+                            82<small>°</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 hidden-md hidden-sm hidden-xs">
+                        <p>
+                            星期四
+                        </p>
+                        <canvas class="skycons-element" data-skycons="SLEET" height="60" id="sleet" width="60"></canvas>
+                        <div class="number">
+                            64<small>°</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Weather --><!-- Bar Graph -->
+    <div class="col-md-4">
+        <div class="widget-container small">
+            <div class="heading">
+                <i class="icon-signal"></i>新注册<i class="icon-list pull-right"></i><i class="icon-refresh pull-right"></i>
+            </div>
+            <div class="widget-content padded">
+                <div class="bar-chart-widget">
+                    <div class="chart-graph">
+                        <div id="barcharts"><canvas width="251" height="100" style="display: inline-block; width: 251px; height: 100px; vertical-align: top;"></canvas></div>
+                        <ul class="chart-text-axis">
+                            <li>
+                                1
+                            </li>
+                            <li>
+                                2
+                            </li>
+                            <li>
+                                3
+                            </li>
+                            <li>
+                                4
+                            </li>
+                            <li>
+                                5
+                            </li>
+                            <li>
+                                6
+                            </li>
+                            <li>
+                                7
+                            </li>
+                            <li>
+                                8
+                            </li>
+                            <li>
+                                9
+                            </li>
+                            <li>
+                                10
+                            </li>
+                            <li>
+                                11
+                            </li>
+                            <li>
+                                12
+                            </li>
+                            <li>
+                                13
+                            </li>
+                            <li>
+                                14
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Bar Graph -->
+</div>
+<div class="row">
+    <!-- Area Charts:Morris -->
+    <div class="col-md-6">
+        <div class="widget-container fluid-height">
+            <div class="heading">
+                <i class="icon-bar-chart"></i>面积图
+            </div>
+            <div class="widget-content padded text-center">
+                <div class="graph-container">
+                    <div class="caption"></div>
+                    <div class="graph" id="hero-area" style="position: relative;"><svg height="342" version="1.1" width="656" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="48.5" y="310" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#aaaaaa" d="M61,310H631" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="48.5" y="238.75" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7,500</tspan></text><path fill="none" stroke="#aaaaaa" d="M61,238.75H631" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="48.5" y="167.5" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M61,167.5H631" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="48.5" y="96.25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">22,500</tspan></text><path fill="none" stroke="#aaaaaa" d="M61,96.25H631" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="48.5" y="25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M61,25H631" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="525.726609963548" y="322.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,6)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan></text><text x="272.93195625759415" y="322.5" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,6)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2011</tspan></text><path fill="#ebf6eb" stroke="#000000" d="M61,259.5265C76.92952612393682,254.3015,108.78857837181044,243.45843750000003,124.71810449574727,238.62650000000002C140.6476306196841,233.7945625,172.5066828675577,227.4856994535519,188.43620899149454,220.87099999999998C204.1925880923451,214.3281994535519,235.70534629404617,187.94878936464087,251.46172539489672,185.9965C267.044957472661,184.0656643646409,298.21142162818956,203.9185892857143,313.7946537059538,205.3385C329.72417982989066,206.7899642857143,361.58323207776425,196.515375,377.5127582017011,197.482C393.4422843256379,198.448625,425.30133657351155,230.2303169398907,441.23086269744834,213.07150000000001C456.9872417982989,196.09919193989072,488.5,69.23675000000001,504.25637910085055,60.95750000000001C520.0127582017011,52.67825000000001,551.5255164034022,134.6978886612022,567.2818955042527,146.8375C583.2114216281896,159.1105136612022,615.0704738760631,155.665375,631,158.608L631,310L61,310Z" fill-opacity="0.5" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.5;"></path><path fill="none" stroke="#a0e2a0" d="M61,259.5265C76.92952612393682,254.3015,108.78857837181044,243.45843750000003,124.71810449574727,238.62650000000002C140.6476306196841,233.7945625,172.5066828675577,227.4856994535519,188.43620899149454,220.87099999999998C204.1925880923451,214.3281994535519,235.70534629404617,187.94878936464087,251.46172539489672,185.9965C267.044957472661,184.0656643646409,298.21142162818956,203.9185892857143,313.7946537059538,205.3385C329.72417982989066,206.7899642857143,361.58323207776425,196.515375,377.5127582017011,197.482C393.4422843256379,198.448625,425.30133657351155,230.2303169398907,441.23086269744834,213.07150000000001C456.9872417982989,196.09919193989072,488.5,69.23675000000001,504.25637910085055,60.95750000000001C520.0127582017011,52.67825000000001,551.5255164034022,134.6978886612022,567.2818955042527,146.8375C583.2114216281896,159.1105136612022,615.0704738760631,155.665375,631,158.608" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="61" cy="259.5265" r="4" fill="#a0e2a0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="124.71810449574727" cy="238.62650000000002" r="4" fill="#a0e2a0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="188.43620899149454" cy="220.87099999999998" r="4" fill="#a0e2a0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="251.46172539489672" cy="185.9965" r="4" fill="#a0e2a0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="313.7946537059538" cy="205.3385" r="4" fill="#a0e2a0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="377.5127582017011" cy="197.482" r="4" fill="#a0e2a0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="441.23086269744834" cy="213.07150000000001" r="4" fill="#a0e2a0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="504.25637910085055" cy="60.95750000000001" r="4" fill="#a0e2a0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="567.2818955042527" cy="146.8375" r="4" fill="#a0e2a0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="631" cy="158.608" r="4" fill="#a0e2a0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#f8f0e6" stroke="#000000" d="M61,284.673C76.92952612393682,278.95875,108.78857837181044,266.82131250000003,124.71810449574727,261.81600000000003C140.6476306196841,256.81068750000003,172.5066828675577,247.36712295081966,188.43620899149454,244.63049999999998C204.1925880923451,241.92362295081966,235.70534629404617,242.24265400552486,251.46172539489672,240.042C267.044957472661,237.86552900552488,298.21142162818956,230.174396978022,313.7946537059538,227.122C329.72417982989066,224.001771978022,361.58323207776425,215.2220625,377.5127582017011,215.3515C393.4422843256379,215.48093749999998,425.30133657351155,241.3833169398907,441.23086269744834,228.1575C456.9872417982989,215.0754419398907,488.5,117.87675000000002,504.25637910085055,110.12C520.0127582017011,102.36325000000001,551.5255164034022,157.96042964480876,567.2818955042527,166.1035C583.2114216281896,174.33605464480874,615.0704738760631,173.24275,631,175.6225L631,310L61,310Z" fill-opacity="0.5" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.5;"></path><path fill="none" stroke="#f1c88e" d="M61,284.673C76.92952612393682,278.95875,108.78857837181044,266.82131250000003,124.71810449574727,261.81600000000003C140.6476306196841,256.81068750000003,172.5066828675577,247.36712295081966,188.43620899149454,244.63049999999998C204.1925880923451,241.92362295081966,235.70534629404617,242.24265400552486,251.46172539489672,240.042C267.044957472661,237.86552900552488,298.21142162818956,230.174396978022,313.7946537059538,227.122C329.72417982989066,224.001771978022,361.58323207776425,215.2220625,377.5127582017011,215.3515C393.4422843256379,215.48093749999998,425.30133657351155,241.3833169398907,441.23086269744834,228.1575C456.9872417982989,215.0754419398907,488.5,117.87675000000002,504.25637910085055,110.12C520.0127582017011,102.36325000000001,551.5255164034022,157.96042964480876,567.2818955042527,166.1035C583.2114216281896,174.33605464480874,615.0704738760631,173.24275,631,175.6225" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="61" cy="284.673" r="4" fill="#f1c88e" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="124.71810449574727" cy="261.81600000000003" r="4" fill="#f1c88e" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="188.43620899149454" cy="244.63049999999998" r="4" fill="#f1c88e" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="251.46172539489672" cy="240.042" r="4" fill="#f1c88e" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="313.7946537059538" cy="227.122" r="4" fill="#f1c88e" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="377.5127582017011" cy="215.3515" r="4" fill="#f1c88e" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="441.23086269744834" cy="228.1575" r="4" fill="#f1c88e" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="504.25637910085055" cy="110.12" r="4" fill="#f1c88e" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="567.2818955042527" cy="166.1035" r="4" fill="#f1c88e" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="631" cy="175.6225" r="4" fill="#f1c88e" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#f5fafc" stroke="#000000" d="M61,284.673C76.92952612393682,284.407,108.78857837181044,286.276125,124.71810449574727,283.609C140.6476306196841,280.941875,172.5066828675577,264.51685519125687,188.43620899149454,263.336C204.1925880923451,262.16798019125685,235.70534629404617,276.4798273480663,251.46172539489672,274.2135C267.044957472661,271.9720773480663,298.21142162818956,247.5399793956044,313.7946537059538,245.305C329.72417982989066,243.0203543956044,361.58323207776425,253.771875,377.5127582017011,256.135C393.4422843256379,258.49812499999996,425.30133657351155,275.43707923497266,441.23086269744834,264.21C456.9872417982989,253.10495423497267,488.5,173.7735625,504.25637910085055,166.8065C520.0127582017011,159.8394375,551.5255164034022,200.63040642076504,567.2818955042527,208.4735C583.2114216281896,216.40278142076502,615.0704738760631,224.540375,631,229.89600000000002L631,310L61,310Z" fill-opacity="0.5" stroke-width="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0.5;"></path><path fill="none" stroke="#a0dcee" d="M61,284.673C76.92952612393682,284.407,108.78857837181044,286.276125,124.71810449574727,283.609C140.6476306196841,280.941875,172.5066828675577,264.51685519125687,188.43620899149454,263.336C204.1925880923451,262.16798019125685,235.70534629404617,276.4798273480663,251.46172539489672,274.2135C267.044957472661,271.9720773480663,298.21142162818956,247.5399793956044,313.7946537059538,245.305C329.72417982989066,243.0203543956044,361.58323207776425,253.771875,377.5127582017011,256.135C393.4422843256379,258.49812499999996,425.30133657351155,275.43707923497266,441.23086269744834,264.21C456.9872417982989,253.10495423497267,488.5,173.7735625,504.25637910085055,166.8065C520.0127582017011,159.8394375,551.5255164034022,200.63040642076504,567.2818955042527,208.4735C583.2114216281896,216.40278142076502,615.0704738760631,224.540375,631,229.89600000000002" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="61" cy="284.673" r="4" fill="#a0dcee" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="124.71810449574727" cy="283.609" r="4" fill="#a0dcee" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="188.43620899149454" cy="263.336" r="4" fill="#a0dcee" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="251.46172539489672" cy="274.2135" r="4" fill="#a0dcee" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="313.7946537059538" cy="245.305" r="4" fill="#a0dcee" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="377.5127582017011" cy="256.135" r="4" fill="#a0dcee" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="441.23086269744834" cy="264.21" r="4" fill="#a0dcee" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="504.25637910085055" cy="166.8065" r="4" fill="#a0dcee" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="567.2818955042527" cy="208.4735" r="4" fill="#a0dcee" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="631" cy="229.89600000000002" r="4" fill="#a0dcee" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="display: none;"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Area Charts:Morris --><!-- Chat -->
+    <div class="col-md-6">
+        <div class="widget-container scrollable chat" style="height: 427px;">
+            <div class="heading">
+                <i class="icon-comments"></i>聊天工具<i class="icon-smile pull-right"></i>
+            </div>
+            <div class="widget-content padded">
+                <ul>
+                    <li>
+                        <img width="30" height="30" src="./首页 - Se7en - 最好的Bootstrap后台主题框架_files/avatar-male.jpg">
+                        <div class="bubble">
+                            <a class="user-name" href="http://www.zi-han.net/theme/se7en/index.html#">管理员</a>
+                            <p class="message">
+                                有些人离开了之后才发现，离开的人是自己的最爱。——《东邪西毒》
+                            </p>
+                            <p class="time">
+                                <strong>今天 </strong>下午 3:53
+                            </p>
+                        </div>
+                    </li>
+                    <li class="current-user">
+                        <img width="30" height="30" src="./首页 - Se7en - 最好的Bootstrap后台主题框架_files/avatar-female.jpg">
+                        <div class="bubble">
+                            <a class="user-name" href="http://www.zi-han.net/theme/se7en/index.html#">王晓</a>
+                            <p class="message">
+                                尽管你一脸不真诚，但我听着很高兴。——《梦想照进现实》
+                            </p>
+                            <p class="time">
+                                <strong>今天 </strong>下午 3:53
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img width="30" height="30" src="./首页 - Se7en - 最好的Bootstrap后台主题框架_files/avatar-male.jpg">
+                        <div class="bubble">
+                            <a class="user-name" href="http://www.zi-han.net/theme/se7en/index.html#">管理员</a>
+                            <p class="message">
+                                眼泪是我的望远镜。透过它，我见到天堂。——《爱的太迟》
+                            </p>
+                            <p class="time">
+                                <strong>今天 </strong>下午 3:53
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img width="30" height="30" src="./首页 - Se7en - 最好的Bootstrap后台主题框架_files/avatar-male.jpg">
+                        <div class="bubble">
+                            <a class="user-name" href="http://www.zi-han.net/theme/se7en/index.html#">管理员</a>
+                            <p class="message">
+                                那些流泪的人真的是为了爱吗？ ——《盛夏光年》
+                            </p>
+                            <p class="time">
+                                <strong>今天 </strong>下午 3:53
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="post-message">
+                <input class="form-control" placeholder="请输入您需要发送的信息…" type="text"><input type="submit" value="发送">
+            </div>
+        </div>
+    </div>
+    <!-- End Chat -->
+</div>
+<div class="row">
+    <!-- Pie Graph 1 -->
+    <div class="col-lg-5">
+        <div class="widget-container fluid-height">
+            <div class="heading">
+                <i class="icon-bar-chart"></i>环形图
+            </div>
+            <div class="widget-content clearfix">
+                <div class="col-sm-6">
+                    <div class="pie-chart1 pie-chart pie-number easyPieChart" data-percent="87" style="width: 200px; height: 200px; line-height: 200px;">
+                        87%
+                        <canvas width="200" height="200"></canvas></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="pie-chart2 pie-chart pie-number easyPieChart" data-percent="26" style="width: 200px; height: 200px; line-height: 200px;">
+                        26%
+                        <canvas width="200" height="200"></canvas></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="widget-container fluid-height">
+            <!-- Table -->
+            <table class="table table-filters">
+                <tbody>
+                <tr>
+                    <td class="filter-category blue">
+                        <div class="arrow-left"></div>
+                        <i class="icon-stethoscope"></i>
+                    </td>
+                    <td>
+                        医疗行业
+                    </td>
+                    <td>
+                        ¥9204
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="sparkslim"><canvas width="100" height="30" style="display: inline-block; width: 100px; height: 30px; vertical-align: top;"></canvas></div>
+                    </td>
+                    <td>
+                        <div class="danger">
+                            -4%
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="filter-category green">
+                        <div class="arrow-left"></div>
+                        <i class="icon-coffee"></i>
+                    </td>
+                    <td>
+                        餐饮行业
+                    </td>
+                    <td>
+                        ¥23,890
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="sparkslim"><canvas width="100" height="30" style="display: inline-block; width: 100px; height: 30px; vertical-align: top;"></canvas></div>
+                    </td>
+                    <td>
+                        <div class="success">
+                            +12%
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="filter-category orange">
+                        <div class="arrow-left"></div>
+                        <i class="icon-gamepad"></i>
+                    </td>
+                    <td>
+                        游戏行业
+                    </td>
+                    <td>
+                        ¥10,995
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="sparkslim"><canvas width="100" height="30" style="display: inline-block; width: 100px; height: 30px; vertical-align: top;"></canvas></div>
+                    </td>
+                    <td>
+                        <div class="success">
+                            +5%
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="filter-category red">
+                        <div class="arrow-left"></div>
+                        <i class="icon-gift"></i>
+                    </td>
+                    <td>
+                        礼品行业
+                    </td>
+                    <td>
+                        ¥6,790
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="sparkslim"><canvas width="100" height="30" style="display: inline-block; width: 100px; height: 30px; vertical-align: top;"></canvas></div>
+                    </td>
+                    <td>
+                        <div class="success">
+                            +26%
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="filter-category blue">
+                        <div class="arrow-left"></div>
+                        <i class="icon-stethoscope"></i>
+                    </td>
+                    <td>
+                        ……
+                    </td>
+                    <td>
+                        ¥9204
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="sparkslim"><canvas width="100" height="30" style="display: inline-block; width: 100px; height: 30px; vertical-align: top;"></canvas></div>
+                    </td>
+                    <td>
+                        <div class="danger">
+                            -4%
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="filter-category magenta">
+                        <div class="arrow-left"></div>
+                        <i class="icon-trophy"></i>
+                    </td>
+                    <td>
+                        ……
+                    </td>
+                    <td>
+                        ¥22,156
+                    </td>
+                    <td class="hidden-xs">
+                        <div class="sparkslim"><canvas width="100" height="30" style="display: inline-block; width: 100px; height: 30px; vertical-align: top;"></canvas></div>
+                    </td>
+                    <td>
+                        <div class="danger">
+                            -4%
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- End Pie Graph 1 -->
+</div>
+</div>

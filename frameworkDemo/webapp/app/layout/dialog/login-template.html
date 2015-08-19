@@ -1,0 +1,57 @@
+<div class="modal-content">
+    <div class="modal-close-btt">
+        <button type="button" class="close" ng-click="dialogCancel()">&times;</button>
+    </div>
+    <div class="modal-body" style="margin-top: 20px; margin-bottom: 20px;">
+        <form name="login_form" class="form-horizontal" role="form">
+            <div style="text-align: center;">
+                {{ '欢迎登录' }}
+            </div>
+            <br>
+            <div class="form-group">
+                <div class="col-sm-3 control-label">
+                    <label>手机号</label>
+                </div>
+                <div class="col-sm-6 text-with-msg">
+                    <input type="text" class="form-control" placeholder="" ng-model="loginInfo.mobile" 
+                           name="mobile" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3 control-label">
+                    <label>密码</label>
+                </div>
+                <div class="col-sm-6 text-with-msg">
+                    <input type="password" class="form-control" placeholder="" ng-model="loginInfo.password" 
+                           name="password" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3 control-label">
+                    <label>验证码</label>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="" ng-model="loginInfo.verifyNumber" 
+                           name="verifyNumber" required>
+                </div>
+                <div class="col-sm-3">
+                    <img src="content/img/captcha.png" class="img-" alt="" width="80%" height="80%">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-9" style="padding-left: 180px;">
+                    <span>{{ '新客户请' }}</span>
+                <a href ng-click="dialogRegis()">
+                    <span>{{'注册'}}</span>
+                </a>
+                </div>
+
+            </div>
+            <div align="center">
+                <button type="button" class="btn btn-info" ng-click="dialogOk()" ng-disabled="!canLogin()">
+                    {{ '确定' }}
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

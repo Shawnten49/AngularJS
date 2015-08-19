@@ -1,0 +1,600 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*车险快速报价页 开始*/
+body {
+    font-size: 14px;
+    color: #414141;
+}
+.eq-quote {
+    float: right;
+    padding: 70px 62px 70px 62px;
+    width: 459px;
+    height: 441px;
+    overflow: hidden;
+    background: #ffa300;
+}
+.eq-quote.quoted {
+    padding: 58px 30px;
+}
+.eq-quote h1 {
+    float: left;
+    width: 100%; height: 78px; line-height: 50px;
+    text-align: center; color: white;
+    font-weight: bolder; font-size: 32px;
+    background: url(../img/quick-quote/icon_quote_header.png) 0 20px no-repeat;
+}
+.quoted h1 {
+    text-align: left;
+    font-weight: normal;
+    padding-left: 70px;
+    height: 60px; line-height: 30px;
+    font-size: 18px;
+    background-position: 0 50%;
+}
+.eq-quote label {
+    font-weight: normal;
+    color: white;
+}
+.eq-quote button {
+    float: right; padding: 0;
+    height: 45px; line-height: 45px;
+    font-size: 16px; font-weight: bold; text-align: center;
+    color: white; border: 1px solid white; background: #ffac1a;
+    margin-right: 34px;
+    width: 62%;
+}
+.quoted button {
+    margin-right: 60px;
+}
+.eq-quote button:hover {
+    background: #545454;
+}
+.eq-illus {
+    float: left;
+}
+.eq-quote input[type=number] {
+    text-align: right;
+}
+.eq-quote input[type=date] {
+    width: 108px; line-height: 1em; cursor: pointer;
+    background: url(../img/quick-quote/icon_arrow_select.png) 100% 50% no-repeat white;
+}
+.quoted strong {
+    float: left;
+    width: 100%;
+    text-align: center; font-size: 60px; font-weight: bold;
+    color: white;
+    height: 165px; line-height: 165px;
+}
+.quoted strong:after {
+    content: '元 起'; font-size: 32px;
+}
+.eq-combos {
+    float: left; padding-bottom: 18px;
+    margin: 0;
+    width: 675px;
+    background: #e6e6e6;
+}
+.eq-combos h2 {
+    padding: 0 20px;
+    line-height: 47px;
+    text-indent: 14px; text-align: left;
+}
+.eq-combos h2 dfn {
+    color: #ff8200;
+    font-size: 20px;
+    font-weight: bold;
+}
+.eq-combo {
+    float: left; margin: 10px 10px 0;
+    padding: 13px 20px; width: 655px;
+    background: white;
+}
+.eq-combo-icon {
+    float: left;
+    width: 147px; height: 151px;
+    font-weight: bold; font-size: 18px;
+    border-right: 1px dashed #e5e5e5; text-align: center;
+}
+.eq-combo-icon:before {
+    content: ''; display: block;
+    margin: 30px 36px 0; width: 75px; height: 75px;
+    background: url(../img/quick-quote/icons_combos.png) no-repeat;
+}
+.eq-combo:last-of-type .eq-combo-icon:before {
+    background-position: 0 -75px;
+}
+.eq-combo-intro {
+    float: left; line-height: 24px;
+    margin: 0; padding-left:30px; width: 468px;
+}
+.eq-combo-intro h1 {
+    font: 30px/46px bold Arial, sans-serif;
+    margin: 0; color: #ff8200;
+}
+.eq-combo-intro h1 del {
+    font-size: 12px;
+    color: #999;
+    line-height: 46px;
+}
+.eq-combo-intro h1:before {
+    content: '¥ ';
+}
+.eq-combo-intro h1 del:before {
+    content: '市场价：';
+}
+.eq-combo-intro h1 del:after {
+    content: '元';
+}
+.eq-combo-intro p {
+    float: left; width: 100%;
+}
+.eq-combo-intro p:before {
+    content: attr(title);
+    float: left; text-indent: 0;
+    width: 100%; color: #999;
+}
+.eq-insure-step-header {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px; height: 84px; line-height: 84px;
+}
+.eq-insure-step-header span {
+    color: #ff8200;
+    font-size: 48px;
+}
+.eq-insure-step-intro {
+    width: 620px; line-height: 24px;
+}
+.eq-insure-step-intro span {
+    line-height: 28px; font-size: 18px; color: #64bae4;
+}
+.eq-insure-steps {
+    margin-top: 40px;
+    background: url(../img/quick-quote/line_insure_steps.png) 0 60px repeat-x;
+}
+.eq-insure-steps ul {
+    float: left; width: 100%;
+}
+.eq-insure-steps ul li {
+    float: left; width: 25%; text-align: center;
+    height: 292px;
+}
+.eq-insure-steps ul li span {
+    display: inline-block; color: #64bae4; background: #64bae4;
+    width: 114px; height: 114px; border-radius: 114px;
+}
+.eq-insure-steps ul li span:hover {
+    color: #54585a; background: #54585a;
+}
+.eq-insure-steps ul li span:before {
+    content: ''; float: left; background: url(../img/quick-quote/icons_steps_insure.png) 232px 51px no-repeat;
+    margin: 28px; width: 58px; height: 58px;
+}
+.eq-insure-steps ul li span:after {
+    content: attr(title); float: left; width: 200%; font-weight: bold;
+    margin: 16px -50% 0; font-size: 16px;
+}
+.eq-insure-steps ul li p {
+    float: left; margin-top: 40px; padding: 0 18px; width: 296px; text-align: justify; line-height: 22px;
+}
+.eq-insure-steps ul li.eq-is1 p, .eq-insure-steps ul li.eq-is3 p {
+    text-align: center;
+}
+.eq-insure-steps ul li.eq-is1 span:before {
+    background-position: 0 0;
+}
+.eq-insure-steps ul li.eq-is2 span:before {
+    background-position: -58px 0;
+}
+.eq-insure-steps ul li.eq-is3 span:before {
+    background-position: -116px 0;
+}
+.eq-insure-steps ul li.eq-is4 span:before {
+    background-position: -174px 0;
+}
+.eq-succor {
+    float: left; padding-left: 30px;
+    width: 675px; height: 287px;
+    background: url(../img/quick-quote/illus_succor.jpg) 92% 0 no-repeat;
+}
+.eq-succor h1 {
+    font-weight: bold;
+    margin-top: 0; height: 62px; line-height: 77px; font-size: 36px;
+}
+.eq-succor h1 em {
+    font-size: 24px;
+}
+.eq-succor h2 {
+    padding-left: 15px; height: 46px; line-height: 46px; font-size: 18px; color: #64bae4;
+}
+.eq-succor p {
+    padding-left: 15px; line-height: 22px;
+    width: 380px;
+}
+.eq-succor p a {
+    line-height: 30px; font-size: 24px; color: #ff8200; white-space: nowrap;
+}
+.eq-succor-services {
+    float: left; padding-top: 1px; width: 480px;
+}
+.eq-succor-services a {
+    position: relative; float: left; margin-top: -1px; height: 144px; text-align: center;
+    border-top: 1px solid #ffc763; color: white; background: #ffb126;
+    width: 25%;
+}
+.eq-succor-services a.eq-ss2, .eq-succor-services a.eq-ss4, .eq-succor-services a.eq-ss5, .eq-succor-services a.eq-ss7 {
+    border-top: 1px solid #ffc45a; background-color: #ffba40;
+}
+.eq-succor-services a:hover {
+    color: white;
+    background: #54585a;
+}
+.eq-succor-services a:before {
+    content: ''; display: block; width: 65px; height: 42px;
+    background: url(../img/quick-quote/icons_succor.png) no-repeat;
+    margin: 33px auto 17px;
+}
+.eq-succor-services a.eq-ss1:before {
+    background-position: 0 0;
+}
+.eq-succor-services a.eq-ss2:before {
+    background-position: 0 -42px;
+}
+.eq-succor-services a.eq-ss3:before {
+    background-position: 0 -84px;
+}
+.eq-succor-services a.eq-ss4:before {
+    background-position: 0 -126px;
+}
+.eq-succor-services a.eq-ss5:before {
+    background-position: 0 -168px;
+}
+.eq-succor-services a.eq-ss6:before {
+    background-position: 0 -210px;
+}
+.eq-succor-services a.eq-ss7:before {
+    background-position: 0 -252px;
+}
+.eq-succor-services a.eq-ss8 {
+    padding: 0;
+}
+.eq-succor-services a.eq-ss8:before {
+    height: 20px; background: none;
+}
+.eq-succor-services a.eq-ss8 span {
+    display: inline-block; margin: 0; padding-left: 26px; width: 84px; height: 22px; line-height: 22px; background: url(../img/quick-quote/icon_arrow_detail.png) no-repeat;
+}
+.eq-claim {
+    position: relative; float: left; width: 100%;
+}
+.eq-claim h1 {
+    padding-left: 36px; height: 88px; line-height: 77px;
+    font-size: 36px; font-weight: bold;
+}
+.eq-claim div {
+    float: left; width: 100%;
+    height: 254px; background: #fafafa;
+}
+.eq-claim div:before {
+    content: ''; position: relative; float: left; width: 85%; border-top: 1px solid #e8e8e8;
+    margin: 97px;
+}
+.eq-claim ul {
+    position: absolute; float: left; width: 100%;
+}
+.eq-claim ul li {
+    float: left; width: 20%; height: 254px; text-align: center;
+}
+.eq-claim ul li span {
+    display: inline-block; background: #fff1e2;
+    margin-top: 47px; width: 97px; height: 97px; border-radius: 97px;
+}
+.eq-claim ul li span:before {
+    content: ''; float: left;
+    margin: 16px 14px; width: 68px; height: 64px;
+    background: url(../img/quick-quote/icons_steps_claim.png) 340px 128px no-repeat;
+}
+.eq-claim ul li.eq-cs1 span:before {
+    background-position: 0 0;
+}
+.eq-claim ul li.eq-cs2 span:before {
+    background-position: -68px 0;
+}
+.eq-claim ul li.eq-cs3 span:before {
+    background-position: -136px 0;
+}
+.eq-claim ul li.eq-cs4 span:before {
+    background-position: -204px 0;
+}
+.eq-claim ul li.eq-cs5 span:before {
+    background-position: -272px 0;
+}
+.eq-claim ul li span:after {
+    content: attr(title); float: left;
+    font-weight: bold; text-align: center; color: #ff8200;
+    margin-top: 18px; width: 100%; font-size: 18px;
+}
+.eq-claim ul li:hover span {
+    background: #54585a;
+}
+.eq-claim ul li.eq-cs1:hover span:before {
+    background-position: 0 -64px;
+}
+.eq-claim ul li.eq-cs2:hover span:before {
+    background-position: -68px -64px;
+}
+.eq-claim ul li.eq-cs3:hover span:before {
+    background-position: -136px -64px;
+}
+.eq-claim ul li.eq-cs4:hover span:before {
+    background-position: -204px -64px;
+}
+.eq-claim ul li.eq-cs5:hover span:before {
+    background-position: -272px -64px;
+}
+.eq-claim ul li:hover span:after {
+    color: #54585a;
+}
+.eq-claim ul li p {
+    float: left; margin-top: 47px; width: 100%;
+}
+.eq-qa {
+    float: left; width: 100%; margin-top: 30px; padding: 0 36px 35px;
+    box-sizing: border-box; border: 1px solid #dedede;
+}
+.eq-qa h1 {
+    height: 88px; line-height: 77px; font-size: 36px; font-weight: bold;
+}
+.eq-qa div { position: relative; float: left; width: 100%; overflow: hidden; }
+.eq-qa dl { float: left; margin: -1px 3px 0; padding: 0; height: 108px; border-top: 1px solid #e5e5e5; }
+.eq-qa dt, .eq-qa dd { float: left; margin-left: 20px; width: 90%; line-height: 22px; }
+.eq-qa dt { margin-top: 10px; height: 40px; line-height: 40px; }
+.eq-qa dt:before, .eq-qa dd:before  { float: left; margin-left: -20px; width: 20px; font-weight: bold; }
+.eq-qa dt:before { content: 'Q'; color: #2983f3; }
+.eq-qa dd:before { content: 'A'; color: #ff8200; }
+.eq-qa-detail {
+    float: left; margin-top: 13px; padding-left: 30px;
+    height: 22px; line-height: 22px;
+    background: url(../img/quick-quote/icon_arrow_detail.png) 0 -23px no-repeat;
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    .eq-quote {
+        padding: 0 20px 50px;
+        width: 100%;
+    }
+    .eq-quote input[type=date] {
+        width: 188px;
+    }
+    .eq-combos {
+        margin-top: 10px; width: 100%;
+    }
+    .eq-combos h2 {
+        line-height: 24px;
+        text-align: center;
+    }
+    .eq-combo {
+        padding: 13px 10px; width: auto;
+    }
+    .eq-combo-icon {
+        width: 80px; height: 60px;
+        font-size: 14px;
+    }
+    .eq-combo-icon:before {
+        margin: 10px 16px 0; width: 30px; height: 30px;
+        background-size: 30px 60px;
+    }
+    .eq-combo:last-of-type .eq-combo-icon:before {
+        background-position: 0 -30px;
+    }
+    .eq-combo-intro {
+        margin-top: -50px; padding: 0; width: 100%;
+    }
+    .eq-combo-intro h1 {
+        margin: 0 0 0 90px; width: auto;
+        font-size: 18px; line-height: 20px;
+    }
+    .eq-combo-intro h1 del {
+        line-height: 36px;
+    }
+    .eq-combo-intro p {
+        width: auto;
+    }
+    .eq-combo-intro p:before {
+        text-indent: 90px;
+    }
+    .eq-quote.quoted {
+        padding: 28px 10px; height: auto;
+    }
+    .eq-quote h1 {
+        margin-top: 25px;
+        font-size: 24px;
+        background: none;
+    }
+    .quoted h1 {
+        padding: 0; height: 40px; line-height: 20px;
+        font-size: 12px;
+    }
+    .quoted strong {
+        height: 140px; line-height: 140px;
+    }
+    .eq-quote button {
+        margin: 30px 0 0; width: 100%;
+    }
+    .quoted button {
+        margin: 0;
+    }
+    .eq-illus {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .eq-insure-steps {
+        margin-top: 20px;
+        background-position: 0 20px;
+    }
+    .eq-insure-step-header {
+        height: 42px;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    .eq-insure-step-header span {
+        font-size: 30px;
+    }
+    .eq-insure-step-intro {
+        display: none;
+    }
+    .eq-insure-steps ul li {
+        height: auto;
+    }
+    .eq-insure-steps ul li span {
+        width: 44px;
+        height: 44px;
+        border-radius: 44px;
+    }
+    .eq-insure-steps ul li span:before {
+        margin: 10px 8px;
+        width: 29px;
+        height: 29px;
+        background-size: 116px 26px;
+    }
+    .eq-insure-steps ul li.eq-is2 span:before {
+        background-position: -29px 0;
+    }
+    .eq-insure-steps ul li.eq-is3 span:before {
+        background-position: -58px 0;
+    }
+    .eq-insure-steps ul li.eq-is4 span:before {
+        background-position: -87px 0;
+    }
+    .eq-insure-steps ul li span:after {
+        margin-top: 6px; font-size: 12px;
+    }
+    .eq-insure-steps ul li p {
+        display: none;
+    }
+    .eq-succor {
+        padding-left: 10px;
+        width: 310px;
+        background: none;
+    }
+    .eq-succor h1 {
+        margin: 45px 0 0 10px; font-size: 18px;
+    }
+    .eq-succor h1 em {
+        font-size: 14px;
+    }
+    .eq-succor p {
+        width: 270px;
+    }
+    .eq-succor-services {
+        margin: 0 15px;
+        width: auto;
+    }
+    .eq-succor-services a {
+        width: 112px;
+    }
+    .eq-claim h1 {
+        padding-left: 10px;
+        height: 68px;
+        line-height: 68px;
+        font-size: 18px;
+    }
+    .eq-claim div {
+        height: 80px; background: white;
+    }
+    .eq-claim div:before {
+        margin: 35px 30px;
+    }
+    .eq-claim ul li {
+        height: 80px;
+    }
+    .eq-claim ul li span {
+        margin-top: 10px;
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+    }
+    .eq-claim ul li span:before {
+        margin: 8px 7px;
+        width: 34px;
+        height: 32px;
+        background-size: 170px 64px;
+    }
+    .eq-claim ul li.eq-cs2 span:before {
+        background-position: -34px 0;
+    }
+    .eq-claim ul li.eq-cs3 span:before {
+        background-position: -68px 0;
+    }
+    .eq-claim ul li.eq-cs4 span:before {
+        background-position: -102px 0;
+    }
+    .eq-claim ul li.eq-cs5 span:before {
+        background-position: -134px 0;
+    }
+    .eq-claim ul li.eq-cs1:hover span:before {
+        background-position: 0 -32px;
+    }
+    .eq-claim ul li.eq-cs2:hover span:before {
+        background-position: -34px -32px;
+    }
+    .eq-claim ul li.eq-cs3:hover span:before {
+        background-position: -68px -32px;
+    }
+    .eq-claim ul li.eq-cs4:hover span:before {
+        background-position: -102px -32px;
+    }
+    .eq-claim ul li.eq-cs5:hover span:before {
+        background-position: -134px -32px;
+    }
+    .eq-claim ul li span:after {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .eq-claim ul li p {
+        display: none;
+    }
+    .eq-qa {
+        display: none;
+    }
+}
+@media (orientation:portrait) {
+    .eq-succor-services {
+        width: auto;
+    }
+    .eq-succor-services a {
+        width: 50%;
+    }
+}
+@media (max-width: 320px) {
+    .eq-quote input[type=date] {
+        width: 108px;
+    }
+    .eq-succor-services a:before {
+        margin: 33px 40px 17px;
+    }
+    .eq-succor-services a.eq-ss2, .eq-succor-services a.eq-ss3, .eq-succor-services a.eq-ss6, .eq-succor-services a.eq-ss7 {
+        border-top: 1px solid #ffc45a; background-color: #ffba40;
+    }
+    .eq-succor-services a.eq-ss1, .eq-succor-services a.eq-ss4, .eq-succor-services a.eq-ss5, .eq-succor-services a.eq-ss8 {
+        background-color: #ffb126;
+    }
+    /*.eq-succor-services a.eq-ss8 {
+        padding-left: 34px;
+    }*/
+}
+@media (max-width: 1000px) {
+    .eq-quote h1:before {
+        content: '';
+        float: left; margin: -10px 2px 0 0;
+        width: 52px; height: 52px;
+        border-radius: 52px;
+        background: url(../img/quick-quote/icon_quote_header_small.png) 50% 50% no-repeat white;
+        background-size: 31px 17px;
+    }
+}
+/*车险快速报价页 结束*/

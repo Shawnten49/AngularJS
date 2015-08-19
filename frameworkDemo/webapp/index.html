@@ -1,0 +1,176 @@
+<!doctype html >
+<html class="no-js" id="ng-app" ng-app="app"  xmlns:ng="http://angularjs.org">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="favicon.ico">
+
+<head>
+
+	<!--[if lt IE 9]>   
+   <script src="lib/ie8fix/html5shiv.js"></script>	
+   <script type="text/javascript">
+	  document.createElement('header');
+	  document.createElement('nav');
+	  document.createElement('menu');
+	  document.createElement('section');
+	  document.createElement('article');
+	  document.createElement('aside');
+	  document.createElement('footer');
+	  document.createElement('dialog');
+	  
+      document.createElement('ng-include');
+      document.createElement('ng-pluralize');
+      document.createElement('ng-view');
+	  document.createElement('ng-scope');
+	  
+      // Optionally these for CSS
+	  document.createElement('ng:include');
+      document.createElement('ng:pluralize');
+      document.createElement('ng:view');
+	</script>
+	<script src="lib/ie8fix/jquery-1.11.2.min.js"></script>
+	<script src="lib/ie8fix/css3-mediaqueries.js"></script>
+<![endif]-->
+
+	<!--[if gte IE 9]>
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+<![endif]-->
+
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+	<!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<script src="lib/ie8fix/ie-emulation-modes-warning.js"></script>
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="lib/ie8fix/ie10-viewport-bug-workaround.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!--[if !IE]><!-->
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+	<!--<![endif]-->
+
+	<!-- css from index.properties -->
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css" type="text/css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link rel="stylesheet" href="lib/angular/module-rich-text-editor/font-awesome.min.css" type="text/css">
+
+	<!-- end css -->
+
+	<!--<base href="/">-->
+	<title ng-bind="title"></title>
+</head>
+
+<body>
+	<!--[if lt IE 8 ]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+	  your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<div class="container clearpadding border-body" style="width: 100%">
+		<div class="fullh" data-ng-include="masterpage"></div>
+	</div>
+
+	<!-- script from index.properties -->
+	<script type="text/javascript" src="lib/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="lib/angular/angular.js"></script>
+	<script type="text/javascript" src="lib/angular/angular-route.js"></script>
+	<script type="text/javascript" src="lib/angular/angular-resource.min.js"></script>
+	<script type="text/javascript" src="lib/angular/angular-animate.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/angular/ui-bootstrap-tpls-0.12.0.min.js"></script>
+
+	<script type="text/javascript" src="lib/angular/module-multilanguage/angular-translate.min.js"></script>
+	<script type="text/javascript" src="lib/angular/module-multilanguage/angular-translate-loader-static-files.min.js"></script>
+
+	<script type="text/javascript" src="lib/angular/module-tree-control/angular-tree-control.js"></script>
+	<link rel="stylesheet" href="lib/angular/module-tree-control/css/tree-control.css" type="text/css">
+	<link rel="stylesheet" href="lib/angular/module-tree-control/css/tree-control-attribute.css" type="text/css">
+
+
+	<link rel="stylesheet" href="lib/angular/module-rich-text-editor/textAngular.css">
+
+	<script type="text/javascript" src="lib/angular/module-rich-text-editor/textAngular-rangy.min.js"></script>
+	<script type="text/javascript" src="lib/angular/module-rich-text-editor/textAngular-sanitize.min.js"></script>
+	<script type="text/javascript" src="lib/angular/module-rich-text-editor/textAngular.min.js"></script>
+	<script type="text/javascript" src="lib/angular/module-rich-text-editor/textAngularSetup.js"></script>
+
+	<script type="text/javascript" src="lib/angular/module-file-upload/angular-file-upload.min.js"></script>
+	<script type="text/javascript" src="lib/angular/module-file-upload/FileAPI.min.js"></script>
+
+	<link rel="stylesheet" href="lib/angular/module-ng-grid/ng-grid.min.css">
+	<script type="text/javascript" src="lib/angular/module-ng-grid/ng-grid-2.0.14.min.js"></script>
+	<script type="text/javascript" src="lib/angular/module-ng-grid/ng-grid-flexible-height.js"></script>
+	<script type="text/javascript" src="lib/angular/module-validator/angular-validator.js"></script>
+
+	<!-- core module -->
+	<script type="text/javascript" src="app/core/app.core.module.js"></script>
+	<script type="text/javascript" src="app/core/app.core.logger.js"></script>
+	<script type="text/javascript" src="app/core/app.core.exception.js"></script>
+
+	<!-- application -->
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/app.config.js"></script>
+	<script type="text/javascript" src="app/app.config.routes.js"></script>
+	<script type="text/javascript" src="app/shared/directives.js"></script>
+    <script type="text/javascript" src="app/shared/dropdown-handler.js"></script>
+	<script type="text/javascript" src="app/shared/dialog.js"></script>
+    
+	<!-- service -->
+	<script type="text/javascript" src="app/services/http-auth-interceptor.js"></script>
+	<script type="text/javascript" src="app/services/authentication.js"></script>
+	<script type="text/javascript" src="app/services/session.js"></script>
+	<script type="text/javascript" src="app/services/digital-motor-services.js"></script>
+	<script type="text/javascript" src="app/services/utilities.js"></script>
+
+	
+
+    <!-- quick quote -->
+
+
+	<!-- component module -->
+
+
+
+	<!--<link rel="stylesheet" href="content/css/app.css" type="text/css">-->
+	<!--	<link rel="stylesheet" href="content/css/motor.css" type="text/css">-->
+	<!--<link rel="stylesheet" href="content/css/theme.css" type="text/css">-->
+    <link href="content/css/se7sen-css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/se7sen-stats" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="content/css/se7en-font.css" type="text/css">
+    <link rel="stylesheet" href="content/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="content/css/style.css" type="text/css">
+    <link href="content/css/isotope.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/jquery.fancybox.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/fullcalendar.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/wizard.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/select2.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/morris.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/datatables.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/datepicker.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/timepicker.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/colorpicker.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/bootstrap-switch.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/daterange-picker.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/typeahead.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/summernote.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/pygments.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/style.css" media="all" rel="stylesheet" type="text/css">
+    <link href="content/css/green.css" media="all" rel="alternate stylesheet" title="green-theme" type="text/css">
+    <link href="content/css/orange.css" media="all" rel="alternate stylesheet" title="orange-theme" type="text/css">
+    <link href="content/css/magenta.css" media="all" rel="alternate stylesheet" title="magenta-theme" type="text/css">
+    <link href="content/css/gray.css" media="all" rel="alternate stylesheet" title="gray-theme" type="text/css">
+    <!--<link rel="stylesheet" href="content/css/star.css" rel="stylesheet">
+    <link rel="stylesheet" href="content/css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="content/css/express.css" rel="stylesheet">
+    <link rel="stylesheet" href="content/css/common.css" rel="stylesheet"> -->
+</body>
+
+</html>

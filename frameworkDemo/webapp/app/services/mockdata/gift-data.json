@@ -1,0 +1,32 @@
+[{
+		"no": "1",
+		"category": "礼品分类一",
+		"name": "",
+		"inventory": "a1",
+		"quantity": "1000",
+		"operation": "是"
+	},
+	{
+		"no": "2",
+		"category": "礼品分类二",
+		"name": "",
+		"inventory": "a2",
+		"quantity": "2000",
+		"operation": "是"
+	},
+	{
+		"no": "3",
+		"category": "礼品分类二",
+		"name": "",
+		"inventory": "a3",
+		"quantity": "3000",
+		"operation": "是"
+	},
+	{
+		"no": "4",
+		"category": "礼品分类二",
+		"name": "",
+		"inventory": "a4",
+		"quantity": "4000",
+		"operation": "是"
+	}]

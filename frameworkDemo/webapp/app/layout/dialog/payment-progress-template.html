@@ -1,0 +1,43 @@
+<div class="modal-content">
+    <div class="modal-body" style="margin-top: 20px; margin-bottom: 20px;">
+        <div align="center">
+            <div>
+                <span>{{'正在支付... '}}</span>
+            </div>
+            <div style="padding-top: 5px;">
+                <i class="fa fa-spinner fa-2x fa-spin"></i>
+            </div>
+            
+        </div>
+        <br>
+        <div style="text-align: left; padding-left: 20px;">
+            <p>
+                <label>{{'如果支付失败...'}}</label> 
+            </p>
+            <p>
+                <span>{{ '额度问题, 推荐' }}</span>
+                <a href ng-click="">
+                    <span>{{'支付宝快捷支付 > '}}</span>
+                </a>
+            </p>
+            <p>
+                <span>{{ '其他问题，查看' }}</span>
+                <a href ng-click="">
+                    <span>{{'查看支付常见问题 > '}}</span>
+                </a>
+            </p>
+        </div>
+        <br>
+        <div style="text-align: left; padding-left: 20px;">
+            <p>
+                <label>{{'支付成功了'}}</label> 
+            </p>
+            <p>
+                <span>{{ '立即查看' }}</span>
+                <a href ng-click="">
+                    <span>{{'订单详情 > '}}</span>
+                </a>
+            </p>
+        </div>
+    </div>
+</div>

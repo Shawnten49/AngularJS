@@ -1,0 +1,24 @@
+<div class="modal-content">
+    <div class="modal-close-btt">
+        <button type="button" class="close" ng-click="dialogCancel()">&times;</button>
+    </div>
+    <div class="modal-body" style="margin-top: 20px; margin-bottom: 20px;">
+        <div style="text-align: center;">
+            <span>{{ 'normal-quote.basic-info.confirm-header' | translate }}</span>
+        </div>
+        <br>
+        <div style="text-align: left;">
+            <p>{{ 'normal-quote.basic-info.confirm-line1' | translate }}</p>
+            <p>{{ 'normal-quote.basic-info.confirm-line2' | translate }}</p>
+            <span>{{ 'normal-quote.basic-info.confirm-line3' | translate }}</span>
+            <br>
+            <span>{{ 'normal-quote.basic-info.confirm-line4' | translate }}</span>
+        </div>
+        <br>
+        <div align="center">
+            <button type="button" class="btn btn-info" ng-click="dialogOk()">
+                {{'normal-quote.basic-info.btt-ok' | translate }}
+            </button>
+        </div>
+    </div>
+</div>

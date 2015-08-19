@@ -1,0 +1,20 @@
+<div class="modal-content">
+    <div class="modal-close-btt">
+        <button type="button" class="close" ng-click="dialogCancel()">&times;</button>
+    </div>
+    <div class="modal-body" style="margin-top: 20px; margin-bottom: 20px;">
+        <div align="center">
+            <i class="fa fa-exclamation-triangle fa-2x" style="color:red;"></i>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <span>{{ msg }}</span>
+        </div>
+        <br>
+        <div align="center">
+            <button type="button" class="btn btn-info" ng-click="dialogOk()">
+                {{'normal-quote.basic-info.btt-ok' | translate }}
+            </button>
+        </div>
+    </div>
+</div>

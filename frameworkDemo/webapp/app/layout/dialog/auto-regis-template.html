@@ -1,0 +1,26 @@
+<div class="modal-content">
+    <div class="modal-close-btt">
+        <button type="button" class="close" ng-click="dialogCancel()">&times;</button>
+    </div>
+    <div class="modal-body" style="margin-top: 20px; margin-bottom: 20px;">
+        <div style="text-align: center;">
+            {{ '自动注册成功' }}
+        </div>
+        <br>
+        <div style="text-align: left;">
+            <p>
+                <span>{{ '注册号：' }}</span>
+                <span>{{ msg }}</span>
+                <span>{{', 密码登录时可以实时获取'}}</span>
+            </p>
+            <p>
+                <div align="center">
+                    <button type="button" class="btn btn-info" ng-click="dialogOk()">
+                        {{ '确定' }}
+                    </button>
+                </div>
+            </p>
+            <br>
+        </div>
+    </div>
+</div>

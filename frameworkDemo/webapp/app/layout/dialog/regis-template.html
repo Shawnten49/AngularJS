@@ -1,0 +1,108 @@
+<div class="modal-content">
+    <div class="modal-body" style="margin-top: 0px; margin-bottom: 20px;">
+        <div><button type="button" class="close" ng-click="dialogCancel()">&times;</button></div>
+
+        <div class="tabbable" style="height: 350px;">
+            <ul class="nav nav-tabs">
+                <li ng-class="getTabClass(1)" ng-click="setActiveTab(1)">
+                    <a data-toggle="tab" style="cursor: pointer">注册</a>
+                </li>
+                <li ng-class="getTabClass(2)" ng-click="setActiveTab(2)">
+                    <a data-toggle="tab" style="cursor: pointer">自动注册</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div ng-class="getTabPaneClass(1)" class="content">
+                    <form name="regis_form" class="form-horizontal" role="form">
+                        <br>
+                        <div class="form-group">
+                            <div class="col-sm-3 control-label">
+                                <label>手机号</label>
+                            </div>
+                            <div class="col-sm-6 text-with-msg">
+                                <input type="text" class="form-control" placeholder="" ng-model="regisInfo.mobile" 
+                                       name="mobile" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-3 control-label">
+                                <label>密码</label>
+                            </div>
+                            <div class="col-sm-6 text-with-msg">
+                                <input type="password" class="form-control" placeholder="" ng-model="regisInfo.password" 
+                                       name="password" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-3 control-label">
+                                <label>确认密码</label>
+                            </div>
+                            <div class="col-sm-6 text-with-msg">
+                                <input type="password" class="form-control" placeholder="" ng-model="regisInfo.verifyPassword" 
+                                       name="verifyPassword" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-3 control-label">
+                                <label>动态码</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="" ng-model="regisInfo.verifyNumber" 
+                                       name="verifyNumber" required>
+
+                            </div>
+                            <div class="col-sm-3">
+                                <button type="button" class="btn btn-info" ng-click="" >
+                                    {{ '发送短信验证码' }}
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-9" style="padding-left: 180px;">
+                                <span>{{ '老客户请' }}</span>
+                            <a href ng-click="dialogLogin()">
+                                <span>{{'登录'}}</span>
+                            </a>
+                            </div>
+
+                        </div>
+                        <div align="center">
+                            <button type="button" class="btn btn-info" ng-click="dialogSubmitRegis()" ng-disabled="!canRegis()">
+                                {{ '注册' }}
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div ng-class="getTabPaneClass(2)" class="content">
+                    <form name="auto_regis_form" class="form-horizontal" role="form">
+                        <br>
+                        <div class="form-group">
+                            <div class="col-sm-3 control-label">
+                                <label>手机号</label>
+                            </div>
+                            <div class="col-sm-6 text-with-msg">
+                                <input type="text" class="form-control" placeholder="" ng-model="autoRetisInfo.mobile" 
+                                       name="mobile" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-9" style="padding-left: 180px;">
+                                <span>{{ '老客户请' }}</span>
+                            <a href ng-click="dialogLogin()">
+                                <span>{{'登录'}}</span>
+                            </a>
+                            </div>
+
+                        </div>
+                        <div align="center">
+                            <button type="button" class="btn btn-info" ng-click="dialogSubmitRegis()" ng-disabled="!canAutoRegis()">
+                                {{ '自动注册' }}
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

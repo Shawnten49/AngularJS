@@ -1,0 +1,40 @@
+<div class="modal-content">
+    <div class="modal-close-btt">
+        <button type="button" class="close" ng-click="dialogCancel()">&times;</button>
+    </div>
+    <div class="modal-body" style="margin-top: 20px; margin-bottom: 20px;">
+        <div style="text-align: center;">
+            {{ '报价信息可以保存，方便下次使用' }}
+        </div>
+        <br>
+        <div style="text-align: left;">
+            <p>{{ '您的报价信息可用以下方式保存：' }}</p>
+            <p>{{ '1、 自动注册' }}</p>
+            <span>{{ '注册号：' }}</span>
+            <span>{{ msg }}</span>
+            <span>{{', 密码在登录时可以实时获取'}}</span>
+            <p>
+                <div align="center">
+                    <button type="button" class="btn btn-info" ng-click="dialogAutoRegis()">
+                        {{ '自动注册' }}
+                    </button>
+                </div>
+            </p>
+            <p>
+                <span>{{ '2、安联用户可以直接' }}</span>
+                <a href ng-click="dialogLogin()">
+                    <span>{{'登录'}}</span>
+                </a>
+                <span>{{'保存保单'}}</span>
+            </p>
+            <p>
+                <span>{{ '3、您也可以使用其他手机号' }}</span>
+                <a href ng-click="dialogRegis()">
+                    <span>{{'注册'}}</span>
+                </a>
+                <span>{{'保存保单'}}</span>
+            </p>
+            <br>
+        </div>
+    </div>
+</div>

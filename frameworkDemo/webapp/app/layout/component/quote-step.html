@@ -1,0 +1,58 @@
+<div style="padding-right:0;" ng-controller="dropdownHandler">
+	<div class="subnavbar">
+		<div class="subnavbar-inner">
+			<a data-target="#mob-menu" data-toggle="collapse" class="btn btn-navbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+            
+            <div class="subnavbar-mob mobile">
+                      <div class="nav-arrow">
+                            <a href="#"><span class="fa fa-caret-left"></span></a>
+                            <a href="#"><span class="fa fa-caret-right"></span></a>
+                      </div>
+                      <div class="nav-step">
+                            <h5 class="text-center">1 基本信息</h5>
+                            <div class="text-center">
+                                <span class="fa fa-circle active"></span>
+                                <span class="fa fa-circle"></span>
+                                <span class="fa fa-circle"></span>
+                                <span class="fa fa-circle"></span>
+                            </div>
+                      </div>
+                  </div>
+
+                <div id="mob-menu" class="collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">1. Basic Information</a></li>
+                        <li class="lavel2"><a href="#">1.1 Driver's Information</a></li>
+                        <li class="lavel2"><a href="#">1.2 Vehicle's Information</a></li>
+                        <li><a href="#">2. Quote</a></li>
+                        <li><a href="#">3. Personal Information</a></li>
+                        <li><a href="#">4. Payment</a></li>
+                      </ul>
+                  </div>
+
+                <ul class="nav navbar-nav col-md-12 desktop">
+				<li class="col-md-3" ng-class="menu1" ng-mouseover="hovertab(itm=1)" >
+                    <a href ng-click="clickMenu(itm=1)"><span>1</span>{{'lb-basic-info-menu'|translate}}</a>  
+				</li>                    
+				<li class="col-md-3" ng-class="menu2" ng-mouseover="hovertab(itm=2)" >
+                    <a href ng-click="clickMenu(itm=2)"><span>2</span>{{'lb-quote-menu'|translate}}</a>
+				</li>
+				<li class="col-md-3" ng-class="menu3" ng-mouseover="hovertab(itm=3)" >
+                    <a href ng-click="clickMenu(itm=3)"><span>3</span>{{'lb-personal-info-menu'|translate}}</a>
+				</li>
+				<li class="col-md-3" ng-class="menu4" ng-mouseover="hovertab(itm=4)" >
+                    <a href ng-click="clickMenu(itm=4)"><span>4</span>{{'lb-payment-menu'|translate}}</a>
+				</li>
+			  </ul>
+                
+            <div ng-show="showDropdownMenu" ng-include src="'app/layout/component/dropdown-menu.html'"></div>
+
+		</div>
+		<!-- /subnavbar-inner -->
+	</div>
+	<!-- /subnavbar -->
+</div>

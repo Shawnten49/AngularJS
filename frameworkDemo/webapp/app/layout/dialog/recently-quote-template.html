@@ -1,0 +1,19 @@
+<div class="modal-content">
+
+    <div class="modal-close-btt">
+        <button type="button" class="close" ng-click="dialogCancel()">&times;</button>
+    </div>
+    <div class="modal-header">
+        <h3>您好，您可以点选使用最近记录进行报价</h3>
+        <h4>如不需要，直接点击“确定”</h4>
+        <label class="control-label">车主：张三丰</label><label class="control-label col-md-offset-1">车牌号：沪H99008</label>
+    </div>
+    <div class="modal-body" style="margin-top: 20px; margin-bottom: 20px;">
+        <div class="gridStyle"  ng-grid="gridOptions"></div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-info" ng-click="dialogOk()">
+           确定
+        </button>
+    </div>
+</div>

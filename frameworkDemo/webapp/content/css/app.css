@@ -1,0 +1,40 @@
+/* app css stylesheet */
+h2, .h2 {
+	font-size: 22px;
+	line-height: 26px;
+}
+
+/* hack for animation */
+.container{
+    position: relative;
+}
+
+.ngViewContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+}
+
+.ngViewContainer.ng-enter,
+.ngViewContainer.ng-leave {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.ngViewContainer.ng-enter {
+    left: 100%;
+}
+.ngViewContainer.ng-enter-active {
+    left: 0;
+}
+.ngViewContainer.ng-leave {
+    left: 0;
+}
+.ngViewContainer.ng-leave-active {
+    left: -100%;
+    display: none;
+}

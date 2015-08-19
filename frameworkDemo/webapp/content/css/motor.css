@@ -1,0 +1,62 @@
+body,
+html {
+	height: 100%;
+}
+
+.fullh {
+	height: 100%;
+}
+
+.header-container {
+	height: 50px;
+	line-height: 50px; 
+	vertical-align: middle;
+	background-color: #54585b;
+	
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.quote-step {
+	height: 50px;
+	line-height: 50px; 
+	vertical-align: middle;
+	padding-left: 15px;
+	background-color: #e4e4e4;
+	color: #54585b;
+}
+.main-container {
+	/*min-height: 800px;*/
+	padding:15px 15px 15px 15px;
+}
+
+.campaign-container {
+	background-color: #0076c8;
+	color: #fff;	
+	padding:15px 15px 15px 15px;
+	min-height:100%;
+}
+
+.container-wrap{
+	min-height: 99.8%;
+}
+
+#wrap {
+  min-height: 92.5%;
+}
+/* fix ng-grid */
+
+
+.gridStyle {
+	border: 1px solid rgb(212, 212, 212);
+	font-size: 12px;
+	width: 600px;
+	/*min-height:260px;
+	min-width: 900px;*/
+}
+
+.ngViewport {
+	overflow: initial;
+}
+
